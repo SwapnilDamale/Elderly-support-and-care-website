@@ -1,0 +1,144 @@
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<head>
+    <title>Gentle Hands Grace </title>
+    <link rel="stylesheet" href="/Gentle Hands Grace/health/css/index.css">
+</head>
+
+<style>
+    /* Assuming the header has a class like 'header' */
+
+
+#head_content a {
+    
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Add hover effects for better UX */
+#head_content a:hover {
+    color: lightgray;
+}
+
+/* Ensure the header is responsive and adapts well to different screen sizes */
+@media (max-width: 768px) {
+    #head_content {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+/* Assuming your navigation bar is inside #head_content */
+#head_content {
+    background-color: transparent; /* Removes the white background */
+    position: absolute; /* Keeps it on top of the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#head_content a {
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* Add hover effects for better UX */
+#head_content a:hover {
+    color: lightgray;
+}
+
+
+
+</style>
+
+<body>
+    <div id="head_content"></div>
+
+
+    <section class="home">
+        <img decoding="async" class="img-slide active" src="/health/images/welcome/1.jpg" ></img>
+        <img decoding="async" class="img-slide" src="/health/images/welcome/4.jpg" ></img>
+        <img decoding="async" class="img-slide" src="/health/images/welcome/2.jpg" ></img>
+        <img decoding="async" class="img-slide" src="/health/images/welcome/3.jpg" ></img>
+        <img decoding="async" class="img-slide" src="/health/images/welcome/5.jpg" ></img>
+        <div class="content active">
+            <h1>Importance of elder care<br></h1>
+            <p>Overview of what the content will cover</p>
+        </div>
+        <div class="content">
+          <h1>Health and Wellness.<br></h1>
+          <p>Common health issues in older adults Preventative care and regular check-ups Importance of a balanced diet and hydration Exercise and physical activity recommendations</p>
+        </div>
+        <div class="content">
+          <h1>Daily Living Assistance<br></h1>
+          <p>Tips for home safety (e.g., fall prevention, modifying living spaces) Managing medications and appointments Personal hygiene and grooming</p>
+        </div>
+        <div class="content">
+          <h1>Emotional and Mental Health<br></h1>
+          <p>Addressing feelings of loneliness and isolation Cognitive health and mental stimulation Social activities and maintaining relationships</p>
+        </div>
+        <div class="content">
+          <h1>Resources and Support<br></h1>
+          <p>Finding local elder care services and support groups Contact information for emergency non-emergency assistance</p>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+ <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    </section>
+  
+      
+    <div id="footer_content"></div>
+</body>
+<script>
+    // Load the header into the #head_content div
+    // $('#head_content').load('/common/views/header.html');
+    $('#head_content').load('/health/common/views/header.html');
+
+    // Load the footer into the #footer_content div
+    $('#footer_content').load('/health/common/views/footer.html');
+</script>
+
+
+<script src="/health/common/controller/index.js"></script>
+
+
+</body>
+
+</html>
