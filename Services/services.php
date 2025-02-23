@@ -1,0 +1,590 @@
+
+
+<html>
+
+
+<link rel="stylesheet" href="../css/services.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <div id="head_content"></div>
+    <div id="body_content"></div>
+
+    <section id="hero">
+       
+        <h1>Comprehensive Senior Care Services at Your Doorstep</h1>
+        
+    </section>
+
+    <section id="services">
+        <h2 style="color: white;">OUR SERVICES</h2>
+        <div class="service-container"> 
+        <div class="service">
+            <img src="../images/services/Indian_couple.jpg" alt="Service Image">
+        </div>
+    </section>
+
+    <section id="how-we-help">
+        <h2>How We Help</h2>
+        <div class="tabs-container">
+            <button class="scroll-left" onclick="scrollTabs('left')">&lt;</button>
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'MedicalEquipment')">Medical Equipment & Devices</button>
+                <button class="tablink" onclick="openTab(event, 'ElderTech')">Elder Tech</button>
+                <button class="tablink" onclick="openTab(event, 'HealthSupport')">Health Support</button>
+                <button class="tablink" onclick="openTab(event, 'HomeServices')">Home Services</button>
+                <button class="tablink" onclick="openTab(event, 'HomeHealthCare')">Home Health Care</button>
+                <button class="tablink" onclick="openTab(event, 'TeleConsultation')">Tele Consultation</button>
+                <button class="tablink" onclick="openTab(event, 'LabDiagnostics')">Lab and Diagnostics</button>
+                <button class="tablink" onclick="openTab(event, 'Convenience')">Convenience</button>
+            </div>
+            <button class="scroll-right" onclick="scrollTabs('right')">&gt;</button>
+        </div>
+ <!-- Tab Content -->
+            
+ 
+ 
+
+
+
+
+ <div id="MedicalEquipment" class="tabcontent">
+    <h3>Medical Equipment and Devices</h3>
+    <div class="service-option">
+        <h4>Oxygen Cylinder</h4>
+        <ul>
+            <li>Popular choice</li>
+            <li>Quick delivery</li>
+            <li>T&C Apply</li>
+        </ul>
+      <!--<button class="book-service">Book service</button>-->  
+        <button class="book-service" onclick="openForm('Oxygen Cylinder')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>BP Instruments</h4>
+        <ul>
+            <li>Excellent quality</li>
+            <li>Accurate reading</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('BP Instruments')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>Gun Thermometer</h4>
+        <ul>
+            <li>Popular choice</li>
+            <li>Quick delivery</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Gun Thermometer')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>Ambu Bag with Mask</h4>
+        <ul>
+            <li>Excellent quality</li>
+            <li>Accurate reading</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Ambu Bag with Mask')">Book service</button>
+    </div>
+</div>
+
+<div id="ElderTech" class="tabcontent">
+    <h3>Elder Tech</h3>
+    <div class="service-option">
+        <h4>Smart Home Devices</h4>
+        <ul>
+            <li>Easy to use</li>
+            <li>Remote monitoring</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Smart Home Devices')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Smart Watch</h4>
+        <ul>
+            <li>Excellent quality </li>
+            <li>Popular choice</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Smart Watch')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Wearable SOS button</h4>
+        <ul>
+            <li>Popular choice</li>
+            <li>Remote monitoring</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Wearable SOS button')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>WiFi related issues</h4>
+        <ul>
+            <li>Easy to use</li>
+            <li>Safety device</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('WiFi related issues')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Laptop/Desktop Hardware</h4>
+        <ul>
+            <li>Popular choice</li>
+            <li>Quick resolution</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Laptop/Desktop Hardware')">Book service</button>
+    </div>
+</div>
+
+<div id="HealthSupport" class="tabcontent">
+    <h3>Health Support</h3>
+    <div class="service-option">
+        <h4>Doctor Visits</h4>
+        <ul>
+            <li>Qualified professionals</li>
+            <li>On-demand visits</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Doctor Visits')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Physio Home Visit</h4>
+        <ul>
+            <li>Physio treatment at home</li>
+            <li>On-demand visits</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Physio Home Visit')">Book service</button>
+    </div>
+    
+    <div class="service-option">
+        <h4>Attendant</h4>
+        <ul>
+            <li>Experienced professional</li>
+            <li>Trusted by seniors</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Attendant')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>Nurse</h4>
+        <ul>
+            <li>Trained eldercare professional</li>
+            <li>Quality, critical care at home</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Nurse')">Book service</button>
+    </div>
+
+</div>
+
+<div id="HomeServices" class="tabcontent">
+    <h3>Home Services</h3>
+    <div class="service-option">
+        <h4>Housekeeping</h4>
+        <ul>
+            <li>Experienced staff</li>
+            <li>Regular and deep cleaning</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Housekeeping')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Plumber</h4>
+        <ul>
+            <li>Excellent service</li>
+            <li>Trained professionals</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Plumber')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Electrician</h4>
+        <ul>
+            <li>Excellent service</li>
+            <li>Trained professionals</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Electrician')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Pest Control
+        </h4>
+        <ul>
+            <li>Experienced staff</li>
+            <li>Trained professionals</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Pest Control')">Book service</button>
+    </div>
+
+</div>
+
+<div id="HomeHealthCare" class="tabcontent">
+    <h3>Home Health Care</h3>
+    <div class="service-option">
+        <h4>Nursing Services</h4>
+        <ul>
+            <li>Professional nurses</li>
+            <li>24/7 support</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service" onclick="openForm('Nursing Services')">Book service</button>
+    </div>
+
+
+
+    <div class="service-option">
+        <h4>Ambulance</h4>
+        <ul>
+            <li>Prompt ambulance service</li>
+            <li>Reliable & trustworthy</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Ambulance')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Hospitalization</h4>
+        <ul>
+            <li>Immediate hospitalization</li>
+            <li>Prompt service assistance</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Hospitalization')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Vaccination Request</h4>
+        <ul>
+            <li>Crafted for Indian seniors</li>
+            <li>Trained healthcare staff</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Vaccination Request')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Flu Vaccination</h4>
+        <ul>
+            <li>Vaccination at home</li>
+            <li>Experienced healthcare staff</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Flu Vaccination')">Book service</button>
+    </div>
+</div>
+
+<div id="TeleConsultation" class="tabcontent">
+    <h3>Tele Consultation</h3>
+    <div class="service-option">
+        <h4>Video Consultations</h4>
+        <ul>
+            <li>Remote medical advice</li>
+            <li>Available 24/7</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Video Consultations')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>General Physician</h4>
+        <ul>
+            <li>Experienced and trustworthy</li>
+            <li>Expert guidance</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('General Physician')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>Physiotherapist</h4>
+        <ul>
+            <li>Remote medical advice</li>
+            <li>Expert health professional
+            </li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Physiotherapist')">Book service</button>
+    </div>
+    <div class="service-option">
+        <h4>Dietitian</h4>
+        <ul>
+            <li>Expert guidance</li>
+            <li>Trusted by seniors</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Dietitian')">Book service</button>
+    </div>
+</div>
+
+<div id="LabDiagnostics" class="tabcontent">
+    <h3>Lab and Diagnostics</h3>
+    <div class="service-option">
+        <h4>Blood Tests</h4>
+        <ul>
+            <li>Accurate results</li>
+            <li>Quick turnaround</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Blood Tests')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Full Body Check-up</h4>
+        <ul>
+            <li>Multiple tests</li>
+            <li>Popular choice</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Full Body Check-up')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>CBC (20 Tests)</h4>
+        <ul>
+            <li>Multiple test</li>
+            <li>Quick turnaround</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('CBC (20 Tests)')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Anemia Profile (15 Tests)</h4>
+        <ul>
+            <li>Get results quickly</li>
+            <li>Quick turnaround</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Anemia Profile (15 Tests)')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Liver function test (10 Tests)</h4>
+        <ul>
+            <li>Accurate results</li>
+            <li>Quick turnaround</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Liver function test (10 Tests)')">Book service</button>
+        
+    </div>
+</div>
+
+<div id="Convenience" class="tabcontent">
+    <h3>Convenience</h3>
+    <div class="service-option">
+        <h4>Grocery Delivery</h4>
+        <ul>
+            <li>Quick and easy</li>
+            <li>Wide selection</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Grocery Delicery')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Driver</h4>
+        <ul>
+            <li>Trained professional</li>
+            <li>Reliable and trustworthy</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Driver')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Cab</h4>
+        <ul>
+            <li>Quick and easy</li>
+            <li>Wide selection</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Cab')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Legal Desk</h4>
+        <ul>
+            <li>Quick and easy</li>
+            <li>Wide selection</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Legal Desk')">Book service</button>
+    </div>
+
+    <div class="service-option">
+        <h4>Care Buddy</h4>
+        <ul>
+            <li>Quick and easy</li>
+            <li>Wide selection</li>
+            <li>T&C Apply</li>
+        </ul>
+        <button class="book-service"onclick="openForm('Care Buddy')">Book service</button>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Hidden Booking Form -->
+<!-- Booking Form -->
+<div id="bookingForm" class="booking-form-container" style="display: none;">
+<h3 id="serviceTitle">Book Service</h3>
+<form action="db.php" method="POST" data-service-name="">
+<div class="form-group">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+</div>
+<div class="form-group">
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+</div>
+<div class="form-group">
+    <button type="submit" class="submit-button">Submit</button>
+    <button type="button" class="cancel-button" onclick="closeForm()" >Cancel</button>
+</div>
+</form>
+</div>
+
+<!-- Confirmation Message -->
+<div id="confirmationMessage" class="confirmation-message" style="display: none;">
+<h3>Booking Confirmed!</h3>
+<p>Service: <span id="confirmedService"></span></p>
+<p>Address: <span id="confirmedAddress"></span></p>
+<button class="submit-button" onclick="closeConfirmation()">OK</button>
+</div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+   
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 >What Our Clients Say</h2>
+    
+            <div class="testimonials-carousel">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Gentle Hands Grace has been a lifesaver for my family. The care and support provided are exceptional."</p>
+                    <p class="testimonial-client">- John Doe</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"The staff at Gentle Hands Grace are incredibly professional and caring. Highly recommend their services."</p>
+                    <p class="testimonial-client">- Jane Smith</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">"Gentle Hands Grace's services have greatly improved my parents' quality of life. Thank you!"</p>
+                    <p class="testimonial-client">- Michael Lee</p>
+                </div>
+            </div>
+    
+            <div class="carousel-controls">
+                <button class="prev-button" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next-button" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 style="color: white;">Contact Us</h2>
+            <p>If you have any questions or need further information, please feel free to reach out to us. We are here to help!</p>
+            
+            <div class="contact-container">
+                <form class="contact-form" action="contact.php"  method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id=subject" name="subject" placeholder="Subject of Your Message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+    
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    <p><strong>Address:</strong><br> Elderly support services,<br> Lohegaon,<br> Pune, Maharashtra, 411047</p>
+                    
+                    <p><strong>Phone:</strong><br> +91 7888297371</p>
+                    
+                    <p><strong>Email:</strong><br> healthcarre01@gmail.com</p>
+                    
+                    <p><strong>Office Hours:</strong><br> Monday - Friday: 9 AM - 5 PM<br> Saturday: 10 AM - 2 PM</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer_content"></div>
+    </section>
+    
+
+    
+
+    <script src="./services.js"></script>
+    <script>
+        // Load the header into the #head_content div
+        $('#head_content').load('/health/common/views/header.html');
+        $('#body_content').load('/health/common/views/body.html');
+    
+        // Load the footer into the #footer_content div
+        $('#footer_content').load('/health/common/views/footer.html');
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
