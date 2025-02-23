@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Flashcards for Seniors</title>
+    <link rel="stylesheet" href="/health/css/faq.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="head_content"></div>
+        <div id="body_content"></div>
+    </nav>
+    <div class="container">
+        <h3>HEALTH INFORMATION FOR SENIORS</h3>
+        <h1>Important Questions and Answers</h1>
+
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for a question..." />
+            <ul class="suggestions-list"></ul>
+        </div>
+
+        <div class="flashcard-grid">
+            <!-- Flashcards will be dynamically generated here -->
+        </div>
+    </div>
+    <div id="footer_content"></div>
+</body>
+    <script>
+        const flashcards = [
+        { question: "Can you assist with meal preparation and dietary needs?", answer: "Yes, our caregivers can prepare nutritious meals based on your loved one’s dietary preferences and restrictions, ensuring they receive balanced meals and proper hydration." },
+
+{ question: "Do you offer post-hospitalization care?", answer: "Yes, we provide post-hospitalization care to help seniors recover safely at home, including wound care, mobility support, medication administration, and therapy coordination." },
+
+// { question: "Where is your office located, and where do you provide home healthcare services?", answer: "Our office is located in Pune, and we currently provide home healthcare services exclusively within the Pune area. This includes skilled caregivers for health-related needs such as medication management, post-surgery care, mobility assistance, and specialized care for conditions like diabetes or dementia. You can easily book a healthcare caregiver for home services by contacting us or registering on our website." },
+
+{ question: "Do you offer online services across India?", answer: "Yes, we provide services nationwide, including general health kit delivery and online classes for yoga, meditation, and wellness. You can access these services by registering on our website." },
+
+{ question: "Do you offer lab tests, and can they be done at home?", answer: "Yes, we provide lab tests with the convenience of home visits. Our healthcare professionals will come to your home to collect samples, ensuring you receive necessary tests without needing to visit a clinic." },
+
+{ question: "What does a permanent caregiver service entail?", answer: "Our permanent caregiver service provides 24/7 support, with a caregiver staying in your home to offer continuous assistance. " },
+
+{ question: "Do you provide a permanent caregiver?", answer: "Yes, we offer permanent caregiver services. You can access this service by choosing one of our care plans that suits your needs." },
+
+// { question: "What government schemes are available for financial support for elderly care, and how can I avail them?", answer: "Several schemes offer financial assistance for elderly care, including the National Old Age Pension Scheme (NOAPS) and the Integrated Program for Senior Citizens (IPSrC). To avail these, you typically need to complete an application form and submit required documents to your local government office or online. Check specific eligibility criteria for each scheme, and our team can help guide you through the process." },
+
+{ question: "Do you provide assistance with learning how to use health equipment?", answer: "Yes, if you purchase one of our care plans, a trained professional will assist you by teaching you how to use health equipment properly. " },
+
+{ question: "How can I maintain a healthy weight?", answer: "Eat a balanced diet and stay active with regular exercise. Our caregivers can help with meal planning and supporting your daily activity." },
+
+{ question: "How often should I check my vision?", answer: "It's recommended to check your vision once a year, or more frequently if you have existing eye conditions. Regular checkups can help detect problems early." },
+
+{ question: "How often should I check my BP and other tests?", answer: "Check blood pressure regularly, especially with hypertension. Routine tests like blood sugar and cholesterol should be done annually or as advised by your doctor." },
+
+{ question: "How can I recognize signs of a disease?", answer: "Look for symptoms like unexplained fatigue, persistent pain, changes in appetite, fever, or sudden weight loss. If you notice any unusual changes, consult a healthcare professional for evaluation." },
+
+{ question: "What are the signs of a stroke and what should be done?", answer: "Signs of a stroke include sudden numbness or weakness on one side of the body, confusion, trouble speaking, sudden vision changes, and severe headache." },
+
+{ question: "What if I'm not satisfied with the package after purchase?", answer: "If you're not happy with your package, reach out to us. We can adjust your plan or provide a refund, depending on our terms and conditions. Your satisfaction is important to us." },
+
+{ question: "Are you licensed to provide caregiving services?", answer: "Yes, we are fully licensed to provide caregiving and healthcare services, ensuring compliance with all legal and regulatory standards for quality care." },
+        ];
+
+        const flashcardGrid = document.querySelector('.flashcard-grid');
+        const searchBox = document.getElementById('searchBox');
+        const suggestionsList = document.querySelector('.suggestions-list');
+
+        function createFlashcard(question, answer) {
+            const flashcard = document.createElement('div');
+            flashcard.classList.add('flashcard-container');
+
+            const flashcardContent = `
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <p class="question-text">${question}</p>
+                    </div>
+                    <div class="flashcard-back">
+                        <p class="answer-text">${answer}</p>
+                    </div>
+                </div>
+            `;
+
+            flashcard.innerHTML = flashcardContent;
+            flashcard.addEventListener('click', () => {
+                flashcard.querySelector('.flashcard').classList.toggle('flipped');
+            });
+
+            flashcardGrid.appendChild(flashcard);
+        }
+
+        flashcards.forEach(card => createFlashcard(card.question, card.answer));
+
+        // Search functionality
+        searchBox.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            suggestionsList.innerHTML = ''; // Clear previous suggestions
+
+            if (searchTerm) {
+                const filteredQuestions = flashcards.filter(card => card.question.toLowerCase().includes(searchTerm));
+                filteredQuestions.forEach(card => {
+                    const suggestionItem = document.createElement('li');
+                    suggestionItem.textContent = card.question;
+                    suggestionItem.addEventListener('click', () => {
+                        searchBox.value = card.question; // Set the search box to the clicked suggestion
+                        suggestionsList.innerHTML = ''; // Clear suggestions
+                        flashcardGrid.innerHTML = ''; // Clear flashcards
+                        createFlashcard(card.question, card.answer); // Display selected card
+                    });
+                    suggestionsList.appendChild(suggestionItem);
+                });
+            }
+        });
+
+    </script>
+
+</body>
+<script>
+    // Load the header into the #head_content div
+    // $('#head_content').load('/common/views/header.html');
+    $('#head_content').load('/health/common/views/header.html');
+
+    // Load the footer into the #footer_content div
+    $('#footer_content').load('/health/common/views/footer.html');
+</script>
+
+
+<script src="/health/Homepage/controller/homepageAng.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<link rel="stylesheet" href="/health/css/blogs.css">
+<style>
+    .tabs {
+    width: 100%;
+    background: rgba(14, 14, 14, 0.8); /* Semi-transparent background */
+    padding: 10px 0; /* Reduced padding for a smaller height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.tabs .tablink {
+    display: inline-block; /* Keep buttons inline */
+    margin: 0 15px; /* Adjusted margin for equal spacing */
+    font-size: 18px; /* Font size for tab buttons */
+    font-weight: 500; /* Font weight for better readability */
+    background: transparent; /* Transparent background for buttons */
+    color: #ffffff; /* White color for the buttons */
+    padding: 10px 15px; /* Add padding for better click area */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.tabs .tablink:hover {
+    background: rgba(41, 163, 150, 0.5); /* Light green background on hover */
+}
+
+/* Optional: Active tab styling */
+.tabs .tablink.active {
+    background: rgba(41, 163, 150, 0.7); /* Darker background for active tab */
+}
+
+</style>
+
+<body>
+    
+    <div id="head_content"></div>
+    <main>
+        <section class="tabs">
+            <button class="tablink" onclick="openTab(event, 'MostPopular')">Most Popular</button>
+            <button class="tablink" onclick="openTab(event, 'MoreHealth')">More Health</button>
+            <button class="tablink" onclick="openTab(event, 'MoreNutrition')">More Nutrition</button>
+            <button class="tablink" onclick="openTab(event, 'MoreFitness')">More Fitness</button>
+            <button class="tablink" onclick="openTab(event, 'MoreSafety')">More Safety</button>
+            <button class="tablink" onclick="openTab(event, 'MoreConvinence')">More Convinence</button>
+        </section>
+        <section id="MostPopular" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image1.jpeg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/1.html">
+                        <h2>The Seniors Guide to Types of Financial Planning in India</h2>
+                    </a>
+                    <h4><b>What is a Financial Plan, and Why Do Indian Seniors Need One?</b></h4>
+                    <p style="font-family:Georgia, 'Times New Roman', Times, serif"> A financial plan is a comprehensive
+                        strategy that outlines your current financial
+                        situation, future money goals, and the specific steps you’ll take to turn those goals into
+                        reality.
+                        It can help you: <br>
+
+                        * Ensure you have enough savings and income streams to maintain your desired lifestyle
+                        throughout
+                        retirement.<br>
+                        * Protect your assets and leave behind a legacy for your loved ones.<br>
+                        * Prepare for potential medical expenses and long-term care needs.<br>
+                        * Achieve financial independence and live your retirement dreams to the fullest.<br></p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image2.jpg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/2.html">
+                    <h2>The Surprising Link Between Speech Speed and Dementia Risk</h2></a>
+                    <b>The Importance of Talking Speed....</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">of a time when you were trying to
+                        explain something, but the right words just wouldn’t come out quickly. Its a common experience
+                        as we age, and many of us worry its a sign of our brain health declining. But, what if the real
+                        indicator wasn’t how often we pause to find words, but how fast we speak in general?</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image3.jpg" alt="Blog" height="300px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/3.html">
+                    <h2>Sex in Old Age: Lets Talk About the Elephant in the Bedroom</h2></a>
+                    <b>The Myths We Need to Destroy</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;"> starters, lets please bury the
+                        idea that sexual desire and activity are only for the young and
+                        sprightly. Newsflash: human beings are sensual creatures by nature, regardless of the number of
+                        candles on their birthday cake. To assume that our elders have zero interest in physical
+                        intimacy is
+                        not only wildly inaccurate but also incredibly ageist.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image4.jpg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/4.html">
+                    <h2>The Golden Wanderers: A Guide to the Best Holiday Destinations for Elderly Couples</h2></a>
+                    <b>Best Holiday Destinations for Older Couples Within India </b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;"> elderly couples seeking cultural
+                        richness, India offers a wealth of options. According to the
+                        Ministry of Tourisms “Incredible India” campaign, popular destinations for senior travelers
+                        include
+                        Ooty, Munnar, and Kodaikanal in the Western Ghats for their cool climate. The backwaters of
+                        Kerala,
+                        with their houseboats and Ayurvedic retreats, provide a rejuvenating escape for seniors seeking
+                        relaxation.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image5.jpg" alt="Blog" height="350px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/5.html">
+                    <h2>5 Highly Important Skin Care Tips for Seniors</h2></a>
+                    <b>Understanding Aging Skin in the Indian Context </b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        The skin, with time and age, begins to lose its elasticity and gets thinner; there occurs
+                        reduced
+                        secretion of oil, which, along with the fine lines and wrinkles, causes dryness.
+                        Some of the best practices for senior skin care in India include:
+
+                        *Daily Cleansing Routine<br>
+                        *Moisturizing Techniques <br>
+                        *Sun Protection Measures <br>
+                        *Facewash for mature skin <br>
+                        *Recommended Skin Care Products for Older Women in India</p>
+
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image6.jpg" alt="Blog" height="350px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/6.html">
+                    <h2>7 Natural Home Remedies to Have Sound Sleep</h2></a>
+                    <b>Home Remedies for Good Sleep</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Try some of the below-mentioned home remedies to get a sound sleep every night:<br>
+                        1. Warm Baths<br>
+                        2. Home Massage<br>
+                        3. Sleep-promoting Foods<br>
+                        4. Create a Sleep Pattern<br>
+                        5. Reduce Screen Time<br>
+                        6. Relaxation Techniques Before Bed<br>
+                        7. Sleep Better with Regular Exercise</p>
+                </div>
+            </article>
+        </section>
+        <section id="MoreHealth" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image7.jpg" alt="Blog Image" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/7.html">
+                    <h2>Health Benefits of Regular Exercise for Seniors</h2></a>
+                    <b>Comprehensive Health Checks</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        A big part of geriatric care is doing detailed health checks. These look at physical and mental
+                        health, lifestyle, and social situations. These checks go beyond normal doctor visits, which
+                        might
+                        only look at specific complaints. They look at the full picture of an older persons health.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image8.jpg" alt="Blog Image" height="300px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>Understanding and Managing Chronic Pain in Elderly</h2>
+                    <b>Caring for Geriatric Patients</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Geriatric care is about giving medical care to older people. It helps diagnose and treat their
+                        health problems. As more people live longer, this care is getting more important. By 2050, there
+                        will be many more people over 65 than there were in 2020. So, healthcare needs to change to help
+                        older people better. Families also need to know what care options they have for their elderly
+                        loved
+                        ones.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image9.jpg" alt="Blog Image" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>Loneliness in the Elderly: Causes and Solutions</h2>
+                    <b>What Causes Loneliness in the Elderly?</b>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        There are several factors that can lead to loneliness in older adults:<br>
+
+                        1. Living Alone<br>
+                        2. Chronic Illness<br>
+                        3. Pride and Embarrassment<br>
+                    <h4><b>How to Reduce Loneliness in Elderly?</b></h4>
+                    1. Schedule Regular Social Visits<br>
+                    2. Help Them Get Out of the House<br>
+                    3. Arrange Transportation Assistance</p>
+                </div>
+            </article>
+        </section>
+        <section id="MoreNutrition" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image6.jpg" alt="Blog Image" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/8.html">
+                    <h2>5 Healthy Meals for Seniors That Are Quick and Easy to Make</h2></a>
+                    <b>5 Healthy Meals for Seniors</b><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Khichdi: A cherished Indian dish, Khichdi embodies the perfect blend of rice and
+                    lentils.<br>Vegetable Upma: This one of the easy meals for the elderly is crafted from semolina
+                    (Suji) and mixed vegetables is a culinary masterpiece that caters to both taste and
+                    nutrition.<br>Dal Soup: A warming bowl of protein-rich lentil soup, delicately spiced to tantalize
+                    the taste buds, serves as an exemplary addition to a seniors meal plan.<br>Idli with Sambar:
+                    Steamed rice cakes accompanied by a flavorful lentil-based stew, this South Indian classic isn’t
+                    just a culinary delight but a nutritional powerhouse. <br>Masoor Dal: A vibrant red lentil curry,
+                    Masoor Dal is a treasure trove of protein and ease of digestion.</p>
+
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image7.jpg" alt="Blog Image" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>The Importance of Hydration in Older Adults</h2>
+                    <b>Hydration is important for older adults because...</b><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    it can contribute to their overall health and well-being. A National Institutes of Health study
+                    found that well-hydrated adults may develop fewer chronic conditions, live longer, and appear
+                    healthier than those who don't drink enough fluids. Dehydration can lead to complications like:<br>
+                    *Urinary tract infections (UTIs)<br>
+                    *Heat stroke<br>
+                    *Heart problems<br>
+                    *Kidney failure<br>
+                    *Blood clot complications<br>
+                    *Headaches<br>
+                    *Tiredness<br>
+                    *Confusion<br>
+                    *Lack of concentration<br>
+                    *Constipation</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image21.jpg" alt="Blog Image" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>Best Diets for Seniors: Maintaining Health and Longevity</h2>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>A healthy diet for seniors....</b>is not just a means of sustenance; its a crucial
+                    element in maintaining overall health and ensuring a fulfilling life. As individuals age, their
+                    nutritional needs change, making it imperative to focus on a diet tailored to support their
+                    well-being.
+
+                    Age-related health concerns, such as cardiovascular issues, cognitive decline, and inflammation,
+                    underscore the significance of choosing the right foods. This blog aims to shed light on the best
+                    diet for old people, empowering them to make informed choices and optimize their health for
+                    longevity.</p>
+                </div>
+            </article>
+        </section>
+        <section id="MoreFitness" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image8.jpg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/9.html">
+                    <h2>How often must a senior citizen get a general checkup?</h2></a>
+                    <b>Understanding the Need for Regular Checkups in Senior Citizens</b><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Age brings wisdom but also introduces new challenges in terms of health. As the body ages, its
+                    ability to fight off diseases weakens, making senior citizens more susceptible to a range of health
+                    issues like hypertension, diabetes, heart problems, and osteoporosis. Regular health checkups become
+                    an indispensable tool in this phase of life.Timely medical checkups help in the early detection of
+                    diseases, which is crucial for effective treatment and management. Additionally, these checkups
+                    provide an opportunity for doctors to monitor ongoing health issues and adjust treatments as needed.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image9.jpg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>Is Regular Physiotherapy Good for Seniors?</h2><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Physiotherapy, also known as physical therapy, is an important healthcare service that can provide
+                    tremendous benefits for people of all ages and abilities. Especially in a busy city like Kolkata,
+                    engaging in regular physiotherapy at home in Kolkata with a good physiotherapist is a smart way to
+                    promote overall health, mobility, and wellbeing.<br><br>
+                    <b>Physiotherapy at home....</b>involves working with a trained therapist to improve
+                    physical function, manage pain and disabilities, and prevent future injuries or limitations, all
+                    from the comfort of home. Treatments are tailored to each individuals needs and goals and may
+                    include exercises, hands-on techniques, assistive devices, and lifestyle advice.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image10.jpg" alt="Blog" height="400px" width="600px" class="hover-image">
+                <div class="text-content">
+                    <h2>Senior Cardio Exercises: Boosting Fitness for Seniors Over 70</h2>
+                    <b>Importance of Cardiovascular Exercise for Seniors</b><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    As we age, maintaining a strong cardiovascular system becomes increasingly important. Engaging in
+                    aerobics for seniors can help improve their heart health, boost endurance, and enhance their overall
+                    quality of life.
+
+                    Regular cardio exercises for seniors can also contribute to weight management, reduce the risk of
+                    chronic diseases, and improve mood and mental well-being.
+
+                    A robust cardiovascular system is essential because it supplies oxygen and nutrients to the bodys
+                    tissues, removes waste products, and helps regulate body temperature. Additionally, it reduces the
+                    risk of conditions such as heart disease, stroke, and high blood pressure—common concerns for
+                    seniors.</p>
+                </div>
+            </article>
+        </section>
+        <section id="MoreSafety" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image11.jpg" alt="Blog" height="300px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/10.html">
+                    <h2>How to Care for Your Parents in India as an NRI</h2></a>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    - Maintain Regular Communication<br>
+                    - Get Organized<br>
+                    - Involve Family and Friends<br>
+                    - Leverage Technology<br>
+                    - Arrange Professional Caregivers<br>
+                    - Set Up Reliable Finances<br>
+                    - Travel to India<br>
+                    - Evaluate Evolving Needs<br>
+                    - Provide Emotional Support<br>
+                    - Explore Healthcare Options<br>
+                    - Be Proactive</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image12.jpg" alt="Blog" height="400px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <h2>How to Choose the Right Wheelchair or Mobility Aid for Seniors?</h2>
+                    <b>Assess Mobility Level</b><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    The first step is evaluating the seniors current mobility and anticipated needs. This determines
+                    whether a manual or power wheelchair is most appropriate.<br><br>
+                    
+                        <b>Manual wheelchairs</b> are ideal for seniors who have assistance pushing or still have upper
+                        body strength. They have large rear wheels that the user propels themselves. Many are
+                        lightweight and foldable for transporting.<br><br>
+                        <b>Power wheelchairs</b> are best for those with limited arm and grip strength. The
+                        battery-powered motor assists movement using a joystick or other controls. Power chairs are
+                        heavier and may not fold.
+                   
+                    </p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image13.jpg" alt="Blog" height="400px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <h2>What is the most common home care service?</h2><br><p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Nurses can spend more one-on-one time with homecare patients than is possible in busy hospitals and
+                    clinics.<br><br>
+                    <b>What Do Home Care Nurses Do?</b><br>
+                    1. Wound care – cleaning, dressing, and monitoring wounds from surgery, injuries, pressure sores, or
+                    ulcers.<br>
+                    2. Management of chronic illnesses like diabetes, COPD, congestive heart failure.<br>
+                    3. Education about medications, nutrition, health conditions.<br>
+                    4. Pain assessment and non-drug pain relief interventions.<br>
+                    5. Patient and caregiver education for medical equipment like oxygen, IV fluids, feeding tubes.
+                    6. Checking vital signs like blood pressure, pulse, respiration rate, and temperature.<br>
+                    7. Collecting samples for diagnostic testing.<br>
+                    8. Coordination of care with the patients physician.</p>
+                </div>
+            </article>
+        </section>
+        <section id="MoreConvinence" class="tabcontent">
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image14.jpg" alt="Blog" height="400px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <a href="../blogs&links/11.html">
+                    <h2>7 Best Ways to Make Android Smartphones Senior Friendly</h2></a>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    - Increase Font Size and Display Contrast<br>
+                    - Enable Voice Commands and Audio Assistance<br>
+                    - Simplify the Home Screen and App Layout<br>
+                    - Enable Accessibility Features<br>
+                    - Set Up Emergency Contacts and Medical Information<br>
+                    - Install Senior-Friendly Apps<br>
+                    - Provide Training and Support<br><br>
+                    As we age, our needs and abilities change, and technology can sometimes seem daunting. However, with
+                    some simple tweaks, Android devices can become a handy tool for seniors, helping them stay
+                    connected, entertained, and informed. This article explores seven practical ways to make Android
+                    smartphone elderly-friendly, ensuring they can enjoy the benefits of modern technology without
+                    feeling overwhelmed.</p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image16.jpg" alt="Blog" height="400px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <h2>Best Travel Destinations in India for Seniors</h2>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                        1. <b>Kerala :</b>” Gods Own Country,” one of our favorite states, Kerala.<br>
+                        2. <b>Jaipur :</b>
+                        Nicknamed the “pink city of India,” Jaipur is the capital of the western state of Rajasthan.<br>
+                        3. <b>Goa :</b>
+                        Goa is a joyful state known for its unique beaches and joyous celebrations. <br>
+                        4. <b>Pondicherry :</b>
+                        The Auroville Ashram in Pondicherry is the most popular travel destination for senior citizens
+                        and is famous for meditation and self-realization. <br>
+                        5. <b>Shillong :</b>
+                        Shillong, the picturesque capital city of the northeastern state of Meghalaya<br>
+                        6. <b>Rann of Kutch :</b>
+                        Senior travellers immensely enjoy a journey to the Rann of Kutch as a vacation destination.
+                        <br>7. <b>Kashmir :</b>
+                        The paradise on Earth is the perfect destination for Indian retirees.
+                    </p>
+                </div>
+            </article>
+            <article class="flex-container">
+                <img src="/health/images/Blogs/image15.jpg" alt="Blog" height="400px" width="500px" class="hover-image">
+                <div class="text-content">
+                    <h2>Shocking Senior Citizen Scams: How to Avoid Them</h2>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif;"> Escalating prevalence of senior citizen scams has become a significant societal issue.<br><br>
+                    Understanding how to protect seniors from scams and exploring the reasons why seniors fall for scams
+                    is crucial in todays world.<br><br>This extensive guide aims to illuminate these scams, provide
+                    practical advice for safeguarding our
+                    elderly, and emphasize the crucial role of services in offering protection and support.<br><br>Senior
+                    citizen scams intricately exploit the vulnerabilities of the elderly. These scams not only cause
+                    financial loss but also lead to emotional trauma for seniors and their families. Recognizing and
+                    understanding these scams is the first step in prevention.</p>
+                </div>
+            </article>
+        </section>
+    </main>  
+
+<div id="footer_content"></div>
+    
+
+<script src="/health/blogs/controller/blogs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+
+<script>
+    // Load the header into the #head_content div
+    // $('#head_content').load('/common/views/header.html');
+    $('#head_content').load('/health/common/views/header.html');
+
+    // Load the footer into the #footer_content div
+    $('#footer_content').load('/health/common/views/footer.html');
+</script>

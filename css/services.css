@@ -1,0 +1,588 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background: url('../images/services/elder_on_wheelchair.avif') no-repeat center center/cover;
+    color: rgb(255, 0, 0);
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eba4a4;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Services Section */
+#services {
+    padding: 20px 10px;
+    background-color: #3498db;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service {
+    text-align: center;
+    
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.scroll-left{
+    padding: 20px;
+    background-color: #3498db;
+    border-radius: 90cm;
+    border-color: #3498db;
+}
+.scroll-right{
+    padding: 20px;
+    background-color: #3498db;
+    border-radius: 90cm;
+    border-color: #3498db;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 20px 0 10px;
+}
+
+.service p {
+    font-size: 1em;
+}
+
+/* How We Help Section */
+#how-we-help {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#how-we-help h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.tabs {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    
+}
+
+.tabs::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.tablink {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 50px 70px;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    font-size: large;
+}
+
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tablink.active {
+    background-color: #3498db;
+    color: white;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* background: url('../images/services/Indian_couple.jpg') no-repeat center center/cover; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 5%;
+}
+
+.service-option {
+    flex: 0 1 calc(45% - 20px);
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    opacity: 85%;
+    display: flex;
+    justify-content: space-between; /* Spread out bullet points and button horizontally */
+    align-items: flex-start;        /* Align button and text content at the top */
+}
+
+.service-content {
+    flex-grow: 1;
+    max-width: 75%;  /* Set max width for the content area */
+    padding-left: 5%;  /* Add padding to match other services */
+}
+
+.service-option h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 5%;
+    width: 200px;    /* Set a fixed width for service names */
+    white-space: nowrap;  /* Ensure the service name doesn't wrap to the next line */
+    overflow: hidden;    /* Hide any overflow if the name is too long */
+    text-overflow: ellipsis; /* Add ellipsis (...) for long service names */
+}
+
+.service-option ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 5%;
+    line-height: 1.6;
+    flex-grow: 1;  /* Ensure bullet points align in a consistent manner */
+}
+
+.service-option button.book-service {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.service-option button.book-service:hover {
+    background-color: #45a049;
+}
+
+.service-option:hover {
+    transform: translateY(-5px);
+    opacity: 100%;
+    background-color: #ddd;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .service-option {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+        padding-left: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-option button.book-service {
+        align-self: flex-end;
+        margin-top: 15px;
+    }
+
+    .service-option h4 {
+        width: 100%;  /* Full width on mobile screens */
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonials-section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+.testimonials-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.testimonial-client {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    font-size: 1.5em;
+    transition: background-color 0.5s ease;
+}
+
+.carousel-controls button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .testimonial-text {
+        font-size: 1em;
+    }
+
+    .testimonial-client {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Us Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #000000;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    flex: 1 1 45%;
+    background-color: #9e9b9b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1 1 45%;
+    background-color: #9e9b9b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1.1em;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form, .contact-info {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+ 
+
+
+
+/*book service redirect form*/
+/* Booking Form and Confirmation Message */
+
+/* Modify the booking form container to make it act like a modal */
+#bookingForm {
+    display: none;
+    position: fixed;  /* Fixed position to keep it in the center of the screen */
+    top: 50%;         /* Center vertically */
+    left: 50%;        /* Center horizontally */
+    transform: translate(-50%, -50%);  /* Adjust for the correct center alignment */
+    z-index: 9999;    /* Ensure it's above other content */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
+}
+
+.booking-form-container,
+.confirmation-message {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+#confirmationMessage {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1001; /* Above other elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.booking-form-container h3,
+.confirmation-message h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.booking-form-container label,
+.confirmation-message p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.booking-form-container input[type="text"],
+.booking-form-container input[type="tel"],
+.booking-form-container input[type="email"],
+.booking-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.cancel-button:hover {
+    background-color: #3498db;
+}

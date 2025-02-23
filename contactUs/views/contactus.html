@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/health/css/contactus.css">
+<body>
+    <div id="head_content"></div>
+ 
+      <div class="container">
+          <header>
+              <button id="contactBtn">Contact Us</button>
+          </header>
+  
+        
+          <form action="https://formspree.io/f/mrbzdlwy" method="POST">
+            
+          <div id="contactModal" class="modal">
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Contact Us</h2>
+                  <form>
+                      <label for="name">Full Name:</label>
+                      <input type="text" id="name" name="name" required>
+                      <label for="number">Mobile Number</label>
+                      <input type="text" id="name" required max="10">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                      <!-- <label for="msg">Message:</label>
+                      <input type="texr" id="name" name="name" required> -->
+                      <label for="message">Exploring Emoha for:</label>
+                      <input type="text" id="emoha" list="Emoha" required>
+                      <datalist id="Emoha">
+                        <option value="Myself or spouse">
+                        <option value="For my parents or an elder">
+                      </datalist>
+                      <label for="message">How did you hear about us?</label>
+                      <input type="text" id="emoha" list="about" required>
+                      <datalist id="about">
+                        <option value="Search Engine(Google, Bing, etc.)">
+                        <option value="Social Media (FB, Insta, etc.)">
+                        <option value="YouTube">
+                        <option value="Friends or Family">
+                        <option value="Others">
+                      </datalist>
+                      <button type="submit">Send</button>
+                  </form>
+              </div>
+          </div>
+        </form>
+      </div>
+      <script>
+        document.getElementById('contactBtn').addEventListener('click', function() {
+    document.getElementById('contactModal').style.display = 'flex';
+    document.body.classList.add('modal-active');
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+    document.getElementById('contactModal').style.display = 'none';
+    document.body.classList.remove('modal-active');
+});
+
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('contactModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-active');
+    }
+});
+
+      </script>
+
+  
+
+    <div id="footer_content"></div>
+</body>

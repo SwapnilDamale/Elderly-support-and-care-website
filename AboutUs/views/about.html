@@ -1,0 +1,262 @@
+<!-- <link rel="stylesheet" href="/health/css/aboutt.css"> -->
+<link rel="stylesheet" href="/health/css/about.css"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            
+        </style>
+<body>
+    <div id="head_content"></div>
+    <div id="body_content"></div>
+    
+
+    <section class="main container">
+        <h1 class="about-heading">About Us</h1> 
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'about-company')">About Company</button>
+            <button class="tab-button" onclick="openTab(event, 'membership')">Membership</button>
+            <button class="tab-button" onclick="openTab(event, 'our-team')">Our Team</button>
+        </div>
+
+        <div id="about-company" class="tab-content active">
+            <div style="position: relative; color: white;">
+                <img src="/health/images/Aboutus/ourCompany.jpg" style="width: 100%; height: 600px; display: block; margin-bottom: 0;">
+                <div style="position: absolute; top: 50%; left: 100px; transform: translateY(-50%);">
+                    <h1 style="color: black;">Our Company!</h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="text">
+                        <h2>Our Mission</h2>
+                        <p>At Gentle Hands Grace, our mission is to provide compassionate, personalized care and support that empowers the elderly to live independently, comfortably, and with dignity in their own homes. We are dedicated to enhancing the quality of life for seniors through comprehensive care plans, tailored services, and a commitment to excellence.Our goal is to be a trusted partner for families, ensuring peace of mind and enriching the lives of those we serve by fostering a sense of belonging, community, and security.</p>
+                    </div>
+                </div>
+
+                <div class="section reverse">
+                    <div class="text">
+                        <h2>Who We Are</h2>
+                        <p>Gentle Hands Grace has grown to become a trusted provider of elderly care services. Our team is comprised of highly trained and compassionate professionals who are committed to delivering personalized care tailored to the unique needs of each individual. We believe in a holistic approach to care that addresses not just physical health, but also emotional and social well-being.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/health/images/Aboutus/who_we_are.jpg" alt="Who We Are">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="text">
+                        <h2>Why Choose Us?</h2>
+                        <p>Choosing Gentle Hands Grace means choosing a partner who genuinely cares about your well-being. Our commitment to excellence, personalized care, and community-building sets us apart. We are here to support you and your family every step of the way, providing peace of mind and a higher quality of life for our residents and clients.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/health/images/Aboutus/why_choose_us.jpg" alt="Our Services">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="text">
+                        <h2>Get in Touch</h2>
+                        <p>We invite you to learn more about our services and how we can support you or your loved one. Contact us today to schedule a tour, ask questions, or discuss your specific needs. Together, we can create a care plan that ensures safety, comfort, and happiness.We are here to help you find the best care solutions for your loved ones. Whether you have questions about our services, need more information, or want to discuss a personalized care plan, our team is ready to assist you.Or fill out our contact form, and we will get back to you promptly. We look forward to hearing from you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            #membership h2 {
+                text-align: left; /* Aligns the heading to the left */
+                margin: 40; /* Optional: removes default margin */
+            }
+        </style>
+        <div id="membership" class="tab-content">
+            <h2>Membership Plans</h2>
+            <div class="membership-container">
+                <p class="price-tag">&#8377;2099/month*</p>
+                
+                    <button class="request-callback" onclick="redirectToContact() "> Request callback </a></button>
+                <h3> Health Management Plan </h3>
+                <ul>
+                    <li>Weekly wellness check-in call</li>
+                    <li>One doctor tele-consult in 3 months</li>
+                    <li>Easy access to professional medical advice & much more</li>
+                    <li>Doctor home visit once in 6 months</li>
+                    <li>Personalised geriatric care plan</li>
+                    <li>Regular health & fall risk assessments to ensure safety</li>
+                    <li>Annual full body checkup with recommendations by doctor</li>
+                    <li>Assistance with curating birthdays</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;2099/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Errands and Assistance Membership</h3>
+                <ul>
+                    <li>Weekly grocery shopping, meal prep, and delivery.</li>
+                    <li>Transportation to medical and non-medical appointments.</li>
+                    <li>Meal delivery service with customized dietary options.</li>
+                    <li>Companion service for outings and social activities</li>
+                    <li>Home delivery of medical supplies and equipment.</li>
+                    <li>Access to a personal concierge for scheduling and coordinating tasks.</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;6635/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3> Family Care Membership </h3>
+                <ul>
+                    <li>Regular reports and updates on the elderly member’s health and well-being.</li>
+                    <li>Access to an online portal for scheduling and communication.</li>
+                    <li>Training and resources for family caregivers (like handling dementia or providing first aid).</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;1020/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Respite Care Plan</h3>
+                <ul>
+                    <li>Short-term caregiving services (for when family caregivers are unavailable).</li>
+                    <li>Flexible duration options (daily, weekly, or monthly).</li>
+                    <li>Inclusion of physical therapy or rehabilitation during the respite period.</li>
+                    <li>Emergency respite services for unexpected situations.</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;4550/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Diabetes Management Plan</h3>
+                <ul>
+                    <li>Daily monitoring calls to ensure your well-being, educate about Diabetes, and proactively manage your appointments, medicines, and tests.</li>
+                    <li>Keep your diabetes in check with quarterly HbA1c tests and teleconsultation once every 3 months for personalized care, regular diabetic complication assessments, geriatric assessments, and fall risk assessments.</li>
+                    <li>Thorough health monitoring by our expert doctors.</li>
+                    <li>Enjoy weekly dietician teleconsult sessions for personalized dietary advice.</li>
+                    <li>Diabetes support groups to share experiences and gain insights.</li>
+                    <li>Priority access to top eye specialists for regular eye health checks.</li>
+                    <li>Medicine ordering reminders and delivery to ensure you never miss a dose.</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;1990/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Dementia Management Plan</h3>
+                <ul>
+                    <li>Weekly monitoring calls by Daughter to ensure your loved one’s well-being, educate about CKD, assist with managing appointments, medicines, and tests</li>
+                    <li>Monthly medical guidance with doctor teleconsultations.</li>
+                    <li>Maintain your mental health with teleconsult sessions with a psychologist every 3 months and mental wellbeing assessments.</li>
+                    <li>Get expert guidance on managing difficult behaviors in dementia through our caregiver counseling sessions and online support groups.</li>
+                    <li>Keep track of your loved one’s overall health with full body tests once a year.</li>
+                    <li>Benefit from dietary suggestions with a dietician session every 3 months to manage your health.</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;8444/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Flexible A La Carte Plan</h3>
+                <ul>
+                    <li>Customized service options based on individual needs.</li>
+                    <li>Pick and choose from available services (transportation, meal delivery, personal care).</li>
+                    <li>Pay-per-service model with membership discounts.</li>
+                    <li>Access to a personal care coordinator for tailoring and scheduling services.</li>
+                    <li>Free annual review and adjustment of services based on changing needs.</li>
+                </ul>
+            </div>
+
+            <div class="membership-container">
+                <p class="price-tag">&#8377;9999/month*</p>
+                <button class="request-callback" onclick="redirectToContact()"> Request callback </button>
+                <h3>Basic Support Plan</h3>
+                <ul>
+                    <li>Access to online resources (wellness guides, nutritional plans, exercise videos).</li>
+                    <li>Discounts on additional services (transportation, medication delivery).</li>
+                    <li>Weekly check-in calls.</li>
+                    <li>Access to a 24/7 helpline for non-emergency advice and support.</li>
+                    <li>Basic tech support for using digital devices and online services.</li> 
+                </ul>
+            </div>
+        </div>
+
+        <div id="our-team" class="tab-content">
+            <img src="/health/images/Aboutus/ourTeam.jpg" style="width: 100%; height: 500px; display: block; margin-bottom: 30px;">
+            <h2 style="color: blueviolet;"><center>Our Team, Leadership with Vision and Compassion</center></h2>
+            <p><center>Our dedicated team at comprises passionate professionals who share a collective vision of transforming home healthcare. Guided by the ethos of compassion, expertise, and innovation, we aim to provide the best care right at your doorstep.</center></p>
+            <div class="team-wrapper">
+                <div class="team-container">
+                    <img src="/health/images/Aboutus/team-member1.jpeg" alt="Team Member 1">
+                    <h1>Abhishek Giram</h1>
+                    <h3>Founder & CEO</h3>
+                    <p>An alumnus of BMCC, Abhishek's visionary leadership and deep understanding of healthcare dynamics have been instrumental in shaping GantleHandsGace success. His commitment to bringing professional healthcare home has touched countless lives.</p>
+                </div>
+                <div class="team-container">
+                    <img src="/health/images/Aboutus/team-member2.jpeg" alt="Team Member 2">
+                    <h1>Devyani Bhagwat</h1>
+                    <h3>Co-founder</h3>
+                    <p>Devyani, an BMCC graduate, is the backbone of GantleHandsGace's operational excellence. Her meticulous approach and passion ensure that every patient receives the highest standard of care.</p>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-grid-container">
+                    <img src="/health/images/Aboutus/team-member3.jpeg" alt="Team Member 3">
+                    <h3 style="color: brown;">Akash Mane</h1>
+                    <h3> Chief Operating Officer</h3>
+                </div>
+                <div class="team-grid-container">
+                    <img src="/health/images/Aboutus/team-member4.jpeg" alt="Team Member 4">
+                    <h3 style="color: brown;">Neel</h1>
+                    <h3>Supply Head</h3>
+                </div>
+                <div class="team-grid-container">
+                    <img src="/health/images/Aboutus/team-member5.jpeg" alt="Team Member 5">
+                    <h3 style="color: brown;">Aditya Kamat</h1>
+                    <h3>NCR, City Head</h3>
+                </div>
+            </div>
+            
+
+            <div class="care-team">
+                <h1 style="color: blueviolet;"><center>Care Associates</center></h1>
+                <p><center>GentleHandsGace assists in providing dedicated support staff who can offer round-the-clock service. Our entire system runs smoothly with the help of a marvellous team. To provide these services, we partner with well-known doctors, prestigious hospitals, and various other retailers.</center></p>
+            </div>
+            
+            <div class="care-grid">
+                <div class="care-item">
+                    <img src="/health/images/Aboutus/care-team1.jpeg" alt="Care Member 2">
+                    <h3>Customer Care</h3>
+                    <p>Our customer care team think on their feet and provide solutions to meet your needs instantly. We promptly answer calls, and our professionals communicate with you and your parents in your preferred language.</p>
+                </div>
+                <div class="care-item">
+                    <img src="/health/images/Aboutus/care-team2.jpeg" alt="Care Member 3">
+                    <h3>Nursing Care</h3>
+                    <p>Our nurses are well-trained and have extensive experience in dealing with the elderly. They are adept in managing emergencies, speak in local languages and meet protocols set by the family.</p>
+                </div>
+                <div class="care-item">
+                    <img src="/health/images/Aboutus/care-team3.jpg" alt="Care Member 4">
+                    <h3>Home Care</h3>
+                    <p>Our housekeepers make sure your parents homes and washrooms are clean and tidy. They keep the houses dirt-free and neatly arrange household items. They also take care of laundry, ironing and organising clothes.</p>
+                </div>
+                <div class="care-item">
+                    <img src="/health/images/Aboutus/care-team4.jpeg" alt="Care Member 5">
+                    <h3>Security Care</h3>
+                    <p>Our home security team will make sure you feel safe in your house. They are a team of professionals who identify any potential threats to your property and provide solutions to alleviate it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    <div id="footer_content"></div>
+ 
+<script src="../controller/about.js"></script>
+<script>
+    // Load the header into the #head_content div
+    $('#head_content').load('/health/common/views/header.html');
+    $('#body_content').load('/health/common/views/body.html');
+
+    // Load the footer into the #footer_content div
+    $('#footer_content').load('/health/common/views/footer.html');
+</script>

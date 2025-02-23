@@ -1,0 +1,395 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.text {
+  line-height: 1.3; /* Adjust this value as needed */
+  font-size: 22px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 1.3;           
+
+}
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 150px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0;
+}
+.container, .main {
+  padding: 0px;          /* Remove padding inside containers */
+  margin-left: 0%;           /* Remove margin around containers */
+}
+
+header {
+  background: rgba(51, 51, 51, 0.8);
+  color: #fff;
+  padding-top: 40px;
+  min-height: 50px;
+  border-bottom: #77aaff 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+header ul {
+  padding: 50px;
+  height: auto;
+  list-style: none;
+}
+
+header li {
+  float: right;
+  display: inline;
+  padding: 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main {
+  padding: 5px;
+  background-color: #fff;
+  min-height: 1200px;
+}
+
+.about-heading {
+  background-color: gainsboro;
+  padding: 20px;
+  margin:0;
+}
+
+.main h1,
+.main h2 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.main p {
+  margin: 10px 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 40px;
+  padding: 20px; /* Added padding for spacing */
+  background-color:#f5eded99; /* Light background color */
+}
+
+.section .text {
+  flex: 1;
+  padding: 50px;
+  border-right: 2px solid #b52c0a; /* Add a line on the right side */
+  margin-right: 5px; /* Space between the line and the image */
+  border-width: 10px;
+}
+
+.section .image {
+  flex: 1;
+  text-align: center;
+}
+
+.section .image img {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+
+.reverse .text {
+  border-right: none; /* Remove the right border for reverse layout */
+  border-left: 2px solid #b52c0a; /* Add the line on the left side */
+  margin-left: 5px; /* Space between the line and the image in reverse layout */
+  margin-right: 0; /* Remove the right margin for reverse layout */
+  border-width: 10px;
+}
+
+.reverse .image img {
+  width: 500px;
+  height: auto;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background-color: #6b5b95;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  text-align: left;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.membership-container {
+  padding: 100px;
+  background-color: #f5eded99;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Space at the bottom */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* For absolute positioning of price tag */
+  border-bottom: 2px solid #7a0808; /* Line color under each container */
+  border-width: 5px;
+  border-top-left-radius: 2cm;
+  border-top-right-radius: 2cm;
+  border-bottom-left-radius: 2cm;
+  border-bottom-right-radius: 2cm;
+}
+
+.price-tag {
+  position: absolute;
+  right: 0px; /* Adjust as needed */
+  bottom: 5px; /* Adjust as needed */
+  color: #ec0f0f; /* White text color */
+  padding: 90px;
+  border-radius: 5px;
+  font-size: 40px;
+}
+
+.request-callback {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  background-color: #711045; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  margin-top: 100px; /* Space between the price tag and button */
+}
+
+.request-callback:hover {
+  background-color: #5a4a8d; /* Darker shade on hover */
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  list-style: disc;
+  margin-left: 0%;
+}
+
+/* Removed footer styles */
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.team-container {
+  flex: 1;
+  text-align: center;
+  margin: 0 80px; /* Adjust space between containers as needed */
+  background-color: #e7e2e2a7;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-container img {
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.team-container h1,
+.team-container h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.team-container h3 {
+  color: #7a0808;
+}
+
+.team-container p {
+  margin-top: 30px;
+}
+
+.team-grid-container {
+  flex: 1;
+  text-align: center;
+  margin: 0 80px; /* Adjust space between containers as needed */
+  background-color: #f8f3f6;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px; /* Adjust space between content and line */
+  border-bottom: 2px solid #7a0808; /* Line color under each container */
+  border-width: 5px;
+  border-top-left-radius: 2cm;
+  border-top-right-radius: 2cm;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.team-grid-container img {
+  max-width: 150px; /* Set the desired width for all images */
+  max-height: 200px; /* Set the desired height for all images */
+  width: 100%; /* Ensures image scales down to fit container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+.team-grid h2,
+h4 {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* Space between images in a row */
+}
+
+.team-item {
+  text-align: center;
+  flex: 1;
+}
+
+.team-item img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.team-item h1,
+.team-item h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team-container h1 {
+  font-size: 30px; /* Adjust heading size if needed */
+  margin-bottom: 15px; /* Additional spacing for main heading */
+}
+
+.team-item h3 {
+  color: #7a0808;
+}
+
+.care-team img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.care-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust this value to change the space between the care items */
+  margin-top: 20px;
+}
+
+.care-item {
+  flex: 1;
+  text-align: center;
+  background-color: #f7f7f76b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(14, 0, 0, 0.1);
+  padding-bottom: 10px; /* Adjust space between content and line */
+  border-bottom: 2px solid #7a0808; /* Line color under each container */
+  border-width: 5px;
+  border-top-left-radius: 2cm;
+  border-top-right-radius: 2cm;
+  border-bottom-left-radius: 2cm;
+  border-bottom-right-radius: 2cm;
+}
+
+.care-item img {
+  max-width: 250px; /* Set the desired width for all images */
+  max-height: 200px; /* Set the desired height for all images */
+  width: 100%; /* Ensures image scales down to fit container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+.care-item h3 {
+  margin-top: 50px;
+}
+
+.care-team h1{
+  margin-top: 100px;
+}
+
+.care-team p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

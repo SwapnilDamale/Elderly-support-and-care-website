@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Care</title>
+  <link rel="stylesheet" href="/health/css/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> <!-- Google Font -->
+  <style>
+    body {
+      background-color: white; /* Set background to white */
+      color: #3498db; /* Set text color */
+      font-family: 'Roboto', sans-serif; /* Use Google Font */
+    }
+
+    nav {
+      background-color: white; /* Ensure nav background is also white */
+    }
+
+    .navbaarr {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbaarr li {
+      display: inline; /* Align menu items horizontally */
+      margin-right: 20px; /* Space between items */
+    }
+
+    .navbaarr a {
+      text-decoration: none; /* Remove underline from links */
+      color: #3498db; /* Set link color */
+      font-size: 18px; /* Increase font size for better visibility */
+      font-weight: bold; /* Make font bold */
+    }
+
+    .navbaarr a:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+
+    .image-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .image-button:hover {
+      transform: scale(1.05);
+    }
+
+    .image-button img {
+      width: 70px;  /* Adjust as needed */
+      height: 20px; /* Adjust as needed */
+      margin-right: 10px;
+    }
+
+    .image-button span {
+      font-size: 16px;
+      color: #3498db; /* Set button text color */
+    }
+    h2{
+color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="navbaarr">
+      <img src="/health/images/Logos/logo_Edited.png" alt="" width = 50px style="display: flex;
+            justify-content: flex-start;">
+      <li><a href="/health/Homepage/views/homepage.html">Home</a></li>
+      <li><a href="/health/blogs/views/Blogs.html">Blogs</a></li>
+      <li><a href="/health/Services/services.php">Services</a></li>
+      <li><a href="/health/testimonals/views/testimonals.html">Testimonials</a></li>
+      <li><a href="/health/FAQs/views/FAQs.html">FAQs</a></li>
+      <li><a href="/health/AboutUs/views/about.html">About us</a></li>
+      <li><a href="/health/login/index.php">Account</a></li>
+      <!-- <button class="image-button">
+        <li><a href="/health/login/index.php">
+        <img src="" alt="Button Image">
+      </a></li>
+      </button> -->
+    </ul>
+    <h2>Important: This is a college project website and does not offer real healthcare services. All information and services shown are simulated for educational purposes.</h2>
+  </nav>
+</body>
+</html>

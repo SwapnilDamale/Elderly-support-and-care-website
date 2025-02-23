@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color for better readability */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 15px 30px; /* Increased padding for a more spacious look */
+}
+
+/* Hover image effect */
+.hover-image {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+.hover-image:hover {
+    box-shadow: 0 0 20px rgba(48, 244, 123, 0.7); /* More pronounced shadow on hover */
+}
+
+/* Hero section styling */
+.hero {
+    background-color: darkkhaki; /* Warm background for hero section */
+    padding: 40px; /* Increased padding for emphasis */
+    text-align: center; /* Centered text alignment */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex; /* Flexbox layout for tabs */
+    justify-content: center; /* Center tabs horizontally */
+    background-color: rgba(14, 14, 14, 0.8); /* Semi-transparent background */
+    padding: 10px 0; /* Padding around tabs */
+    margin-bottom: 20px; /* Space below tabs */
+}
+
+.tablink {
+    display: inline-block; /* Inline block for button styling */
+    margin: 0 10px; /* Equal spacing around tabs */
+    font-size: 18px; /* Larger font for visibility */
+    font-weight: bold; /* Bold font for emphasis */
+    background: transparent; /* Transparent background for tabs */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding for better click area */
+    border: 2px solid transparent; /* Border for hover effect */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.tablink:hover {
+    background: rgba(41, 163, 150, 0.5); /* Light background on hover */
+    border-color: #ffffff; /* White border on hover */
+}
+
+/* Tab content styling */
+.tabcontent {
+    display: none; /* Hidden by default */
+    padding: 20px; /* Padding for content area */
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Article styling */
+.tabcontent article {
+    background-color: #f9f9f9; /* Light background for articles */
+    padding: 15px; /* Padding inside articles */
+    border: 1px solid #ddd; /* Border for articles */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between articles */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+/* Hover effect on articles */
+.tabcontent article:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Image styling */
+.tabcontent article img {
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below images */
+    width: 100%; /* Full width to fit the article */
+    max-width: 300px; /* Set a maximum width for uniformity */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop to fit without stretching */
+}
+
+/* Flex container styling */
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+    }
+    .flex-container img {
+        margin-bottom: 20px; /* Space below images */
+    }
+}
+
+/* Container for forms */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height for the container */
+    padding: 20px; /* Padding for container */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+form {
+    background-color: white; /* White background for forms */
+    padding: 20px; /* Padding for forms */
+    border-radius: 10px; /* Rounded corners for forms */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for forms */
+    max-width: 600px; /* Max width for forms */
+    width: 100%; /* Full width */
+}

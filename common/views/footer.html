@@ -1,0 +1,190 @@
+<!-- footer.html -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h2>Gentle Hands Grace</h2>
+            <p>&copy; 2024 GentleHandsGace. All rights reserved.</p>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/health/Services/services.php">Elderly Care</a></li>
+                        <li><a href="/health/Services/services.php">Health Management</a></li>
+                        <li><a href="/health/Services/services.php">Nursing Services</a></li>
+                        <li><a href="/health/Services/services.php">Transportation Services</a></li>
+                        <li><a href="/health/Services/services.php">Meal Preparation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="/health/AboutUs/views/about.html">Our Mission</a></li>
+                        <li><a href="/health/AboutUs/views/about.html">Our Team</a></li>
+                        <li><a href="/health/testimonals/views/testimonals.html">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/health/FAQs/views/FAQs.html">FAQs</a></li>
+                        <li><a href="/health/Services/services.php">Contact Support</a></li>
+                        <li><a href="/health/AboutUs/views/about.html">Privacy Policy</a></li>
+                        <li><a href="/health/AboutUs/views/about.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Enter your email" />
+                <button>Subscribe</button>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/narendramodi/">Facebook</a>
+                <a href="https://x.com/donaldtrump">Twitter</a>
+                <a href="https://www.instagram.com/coldfire__34/">Instagram</a>
+                <a href="https://www.linkedin.com/in/swapnil-damale-74b46728b/">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Go to Top Button -->
+    <button class="goTop" title="Go to the top">
+        <img src="/health/images/Logos/arrow-up.svg" alt="Go to Top">
+    </button>
+</footer>
+
+<!-- Go to Top Button -->
+<button class="goTop" title="Go to the top">
+    <img src="/health/images/Logos/arrow-up.svg" alt="Go to Top">
+</button>
+
+<style>
+    body {
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        height: 2000px; /* Just for demo, ensures enough scroll space */
+        font-family: Arial, sans-serif; /* Default font */
+    }
+
+    footer {
+        background: #333; /* Dark background for footer */
+        color: #fff; /* White text */
+        padding: 40px 0; /* Vertical padding for footer */
+        text-align: center; /* Centered text */
+        position: relative; /* Allows for positioning of goTop button */
+    }
+
+    .footer-container {
+        max-width: 1200px; /* Max width for footer content */
+        margin: 0 auto; /* Center the footer */
+        padding: 0 20px; /* Padding for mobile */
+    }
+
+    .footer-content h2 {
+        margin-bottom: 10px; /* Space below company name */
+    }
+
+    .footer-links {
+        display: flex; /* Flexbox for service links */
+        justify-content: space-between; /* Space out the links */
+        margin: 20px 0; /* Space above and below the links */
+    }
+
+    .footer-links div {
+        flex: 1; /* Each section takes equal space */
+        padding: 0 15px; /* Padding for sections */
+    }
+
+    .footer-links h3 {
+        margin-bottom: 10px; /* Space below headings */
+    }
+
+    .footer-links ul {
+        list-style: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+    }
+
+    .footer-links ul li {
+        margin-bottom: 5px; /* Space between list items */
+    }
+
+    .footer-links a {
+        color: #fff; /* White text for links */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .footer-links a:hover {
+        color: #ff5722; /* Change color on hover */
+    }
+
+    .newsletter {
+        margin: 20px 0; /* Space above and below newsletter */
+    }
+
+    .newsletter input {
+        padding: 10px; /* Padding for input */
+        margin-right: 10px; /* Space between input and button */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .newsletter button {
+        padding: 10px 15px; /* Padding for button */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #ff5722; /* Button color */
+        color: #fff; /* White text */
+        cursor: pointer; /* Pointer on hover */
+    }
+
+    .social-media {
+        margin-top: 20px; /* Space above social media links */
+    }
+
+    .social-media a {
+        margin: 0 15px; /* Space between social media links */
+        color: #fff; /* White text for links */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .social-media a:hover {
+        color: #ff5722; /* Change color on hover */
+    }
+
+    .goTop {
+        height: 40px; /* Button height */
+        width: 40px; /* Button width */
+        border-radius: 50%; /* Rounded button */
+        background-color: red; /* Button color */
+        display: flex; /* Flexbox for centering icon */
+        justify-content: center; /* Centering icon */
+        align-items: center; /* Centering icon */
+        cursor: pointer; /* Pointer on hover */
+        position: fixed; /* Fixed position */
+        right: 20px; /* Distance from right */
+        bottom: 20px; /* Distance from bottom */
+        box-shadow: 0px 0px 10px rgba(31, 7, 213, 0.905); /* Shadow */
+        border: none; /* No border */
+        z-index: 1000; /* On top of other content */
+       
+    }
+
+    .goTop img {
+        width: 20px; /* Icon size */
+        height: 20px; /* Icon size */
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        $('.goTop').click(function() {
+            $('html, body').animate({scrollTop: 0}, 'smooth');
+        });
+    });
+</script>
